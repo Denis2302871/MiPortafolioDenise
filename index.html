@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mi Portafolio</title>
+  <link rel="stylesheet" href="index.html">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css">
+  <style>
+    body {
+      background-color: #f8f9fa;
+    }
+    .navbar {
+      background-color: #007bff;
+    }
+    .navbar-brand {
+      font-weight: bold;
+      color: #fff;
+    }
+    .hero {
+      background-color: #007bff;
+      color: white;
+      text-align: center;
+      padding: 50px 20px; /* Reducido de 100px */
+    }
+    .hero h1 {
+      font-size: 2.5rem; /* Tamaño más pequeño */
+      margin-bottom: 10px;
+    }
+    .hero h2 {
+      font-size: 1.2rem; /* Tamaño más pequeño */
+      margin-bottom: 20px;
+    }
+    .social-icons a {
+      color: white;
+      margin: 0 10px;
+      font-size: 1.5rem;
+    }
+    .carousel-item img {
+      width: 100%;  /* Ajusta el ancho completo */
+      height: 400px; /* Fija la altura */
+      object-fit: cover;  /* Asegura que la imagen no se distorsione */
+    }
+    @media (max-width: 768px) {
+  .hero h1 {
+    font-size: 2rem;  /* Tamaño más pequeño para pantallas móviles */
+  }
+}
+    .section-title {
+      font-size: 2rem;
+      color: #007bff;
+      text-align: center;
+      margin: 40px 0;
+    }
+    .footer {
+      background-color: #343a40;
+      color: #fff;
+      text-align: center;
+      padding: 20px 0;
+    }
+    .form-container {
+      display: flex;
+      justify-content: center;
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Navbar -->
+  <nav class="navbar navbar-expand-lg navbar-dark">
+    <div class="container">
+      <a class="navbar-brand" href="#">Mi Portafolio</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ms-auto">
+          <li class="nav-item"><a class="nav-link" href="#about">Sobre mí</a></li>
+          <li class="nav-item"><a class="nav-link" href="#knowledge-hobby">Conocimientos  Hobby</a></li>
+          <li class="nav-item"><a class="nav-link" href="#servicios">Aprendizajes</a></li>
+          <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <h1>Denise Mejía Bibiano</h1>
+    <h2>Ingeniera en Sistemas</h2>
+    <div class="social-icons">
+      <a href="https://facebook.com" target="_blank"><i class="bi bi-facebook"></i></a>
+      <a href="https://github.com" target="_blank"><i class="bi bi-github"></i></a>
+      <a href="https://gitlab.com/" target="_blank"><i class="bi bi-gitlab"></i></a>
+      <a href="https://www.instagram.com/" target="_blank"><i class="bi bi-instagram"></i></a>
+    </div>
+  </section>
+  <section id="repositorio" class="container mt-5">
+    <h2 class="section-title">Mi Repositorio en GitHub</h2>
+    <div class="text-center">
+      <a href="https://github.com/Denis2302871/Mi-Portafolio.git" target="_blank" class="btn btn-primary">
+        Ver mi Repositorio
+      </a>
+    </div>
+  </section>
+  
+
+  <!-- Carousel Section -->
+  <div id="carouselExampleCaptions" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-indicators">
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="1" aria-label="Slide 2"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="2" aria-label="Slide 3"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="3" aria-label="Slide 4"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="4" aria-label="Slide 5"></button>
+      <button type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide-to="5" aria-label="Slide 6"></button>
+    </div>
+    <div class="carousel-inner">
+      <div class="carousel-item active">
+        <img src="image1.jpeg" class="d-block w-100 img-fluido" alt="Slide 1">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Creando Página Web</h5>
+          <p>Aquí se desarrolló una pequeña página web.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image2.jpeg" class="d-block w-100 img-fluid" alt="Slide 2">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mantenimiento</h5>
+          <p>Se le dio mantenimiento a una laptop.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image3.jpeg" class="d-block w-100 img-fluid" alt="Slide 3">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Mantenimiento</h5>
+          <p>Se le cambio la pasta a una laptop.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image4.jpeg" class="d-block w-100 img-fluid" alt="Slide 4">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Creando Software</h5>
+          <p>Instalacion de un Software en una maquina</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image5.jpeg" class="d-block w-100 img-fluid" alt="Slide 5">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Archivos</h5>
+          <p>tenia la caroeta d todos los trabajos que se hacias en la semana.</p>
+        </div>
+      </div>
+      <div class="carousel-item">
+        <img src="image6.jpeg" class="d-block w-100 img-fluid" alt="Slide 6">
+        <div class="carousel-caption d-none d-md-block">
+          <h5>Servidores</h5>
+          <p>Cuando se le cambio la pieza a un servidor</p>
+        </div>
+      </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="prev">
+      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Anterior</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleCaptions" data-bs-slide="next">
+      <span class="carousel-control-next-icon" aria-hidden="true"></span>
+      <span class="visually-hidden">Siguiente</span>
+    </button>
+  </div>
+
+  <!-- About Me Section -->
+  <section id="about" class="container mt-5">
+    <h2 class="section-title">Sobre mí</h2>
+    <p>Soy Denise Mejía, estudiante de Ingeniería en Sistemas, apasionada por el desarrollo web y el mantenimiento de equipos informáticos. Me encanta aprender nuevas tecnologías y afrontar retos complejos.</p>
+  </section>
+  <section id="servicios" class="container mt-5">
+    <h2 class="section-title">Aprendizajes</h2>
+    <div class="row text-center">
+      <div class="col-md-4">
+        <i class="bi bi-book" style="font-size: 3rem; color: #1100ff;"></i>
+        <h4>Objetivo Personal</h4>
+        <p>Graduarme como Ingeniera en Sistemas e iniciarme 
+          laboralmente en una empresa en donde pueda 
+          desarrollar las habilidades aprendidas y me permita 
+          crecer profesionalmente. </p>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-people" style="font-size: 3rem; color: #2f00ff;"></i>
+        <h4>Software</h4>
+        <ul>
+          <li> Excel Basico</li>
+          <li> Word intermedio</li>
+          <li> Power Point Intermedio</li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <i class="bi bi-globe" style="font-size: 3rem; color: #0004ff;"></i>
+        <h4>Habtitules y habilidades</h4>
+        <p> 
+          • Liderazgo 
+          • Gusto por el Trabajo en Equipo 
+          • Responsable 
+          • Honesta 
+          • Puntual 
+          • Auto motivada 
+          • Gusto por el aprendizaje constante </p>
+      </div>
+    </div>
+  </section>
+
+ <!-- Knowledge and Hobby Section -->
+ <section id="knowledge-hobby" class="container mt-5">
+  <div class="row text-center">
+    <div class="col-md-6">
+      <h2 class="section-title">Conocimientos</h2>
+      <ul>
+        <li>Cableado y ponchado de cables de red</li>
+        <li>Detección y corrección de errores en sistemas</li>
+        <li>Certificación de Competencia Laboral</li>
+      </ul>
+    </div>
+    <div class="col-md-6">
+      <h2 class="section-title">Hobby</h2>
+      <ul>
+        <li>Fútbol</li>
+        <li>Música</li>
+        <li>Lectura</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+  <section id="contacto" class="container mt-5 mb-5">
+    <h2 class="section-title">Contáctanos</h2>
+    <div class="form-container"> 
+      <form class="w-50">
+        <div class="mb-3">
+          <label for="nombre" class="form-label">Nombre</label>
+          <input type="text" class="form-control" id="nombre" placeholder="Escribe tu nombre">
+        </div>
+        <div class="mb-3">
+          <label for="email" class="form-label">Correo Electrónico</label>
+          <input type="email" class="form-control" id="email" placeholder="Escribe tu correo">
+        </div>
+        <div class="mb-3">
+          <label for="mensaje" class="form-label">Mensaje</label>
+          <textarea class="form-control" id="mensaje" rows="3" placeholder="Escribe tu mensaje"></textarea>
+        </div>
+        <button type="submit" class="btn btn-primary">Enviar</button>
+      </form>
+    </div>
+  </section>
+         <!-- Botón para regresar al principio -->
+   <div class="text-center mt-4">
+    <a href="#top" class="btn btn-secondary">Regresar al principio</a>
+  </div>
+
+
+  <footer class="footer">
+    <p>&copy; 2024 Denise Mejía Bibiano</p>
+  </footer>
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
+
